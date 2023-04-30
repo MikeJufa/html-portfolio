@@ -1,16 +1,16 @@
 <!-- TODO 1: Create the HTML Boilerplate -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head id="head">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Canada International Golf Association</title>
-    <link rel="stylesheet" href="./styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Liu+Jian+Mao+Cao&family=Long+Cang&display=swap" rel="stylesheet">
+    <title>Canada International Golf Association</title>
 </head>
+
 <body>
     <h1>Canada International Golf Association</h1>
     <h1 id="hanzhibiaoti1">加拿大国际高尔夫协会</h1>
@@ -29,6 +29,19 @@
          alt="An intimidating leopard."
          height="200" />
         <p>Beware of the leopard</p>
+        <button onclick="addCSS()" id="button">Toggle CSS</button>
     </div>
+
+    <script>
+      let counter = 0
+      function addCSS() {
+        counter++
+        if (counter % 2 !== 0) {
+          document.getElementById("head").innerHTML = '  <title>Canada International Golf Association</title> \n<link rel="stylesheet" href="./styles.css" />'
+        } else {
+          document.getElementById("head").innerHTML = '  <title>Canada International Golf Association</title> '
+        }
+      }
+    </script>
 </body>
 </html>
