@@ -6,15 +6,15 @@ h1 {
     text-align: center;
 }
 
-#hanzhibiaoti1 {
-    font-family: 'Liu Jian Mao Cao', cursive;
+.hanzhibiaoti1 {
+    font-family: 'Liu Jian Mao Cao', cursive !important;
     font-size: xxx-large;
     text-align: center;
     font-weight: 900;
 }
 
-#hanzhibiaoti2 {
-    font-family: 'Long Cang', cursive;
+.hanzhibiaoti2 {
+    font-family: 'Long Cang', cursive !important;
     font-size: xxx-large;
     text-align: center;
     font-weight: 900;
